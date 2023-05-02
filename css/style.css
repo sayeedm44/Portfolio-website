@@ -178,11 +178,75 @@ section {
     transition: .5s ease;
 }
 
+
 .btn:hover {
+    background: transparent;
+    background: var(--white-color);
+    color: var(--main-color);
+}
+
+.container{
+    padding-top: 150px;
+}
+
+.slick-slide{
+    margin: 0 20px;
+}
+.slick-slide img{
+    width: 100%;
+}
+.slick-slider{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+}
+.slick-list{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.slick-track{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block
+}
+.slick-slide{
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+.slick-slide img{
+    display: block;
+}
+.slick-initialized .slick-slide{
+    display: block;
+}
+
+
+.btn1 {
+    display: inline-block;
+    padding: 0.5rem 0.6rem;
+    background: var(--main-color);
+    border-radius: .8rem;
+    box-shadow: 0 .2rem .5rem var(--shadow-color);
+    font-size: 2.5rem;
+    color: var(--white-color);
+    letter-spacing: .1rem;
+    font-weight: 600;
+    border-radius: .2rem solid transparent;
+    transition: .5s ease;
+}
+
+.btn1:hover {
     background: transparent;
     color: var(--main-color);
     border-color: var(--main-color);
 }
+
 
 .home .profession-container {
     position: absolute;
@@ -205,6 +269,71 @@ section {
     justify-content: center;
     align-items: center;
     animation: professionRotate 13s ease-out infinite;
+}
+
+.test {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    width: 100%;
+    overflow: hidden;
+}
+
+.partners_section {
+    padding: 64px 0;
+
+}
+
+.section_title {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.logos_slider {
+    overflow-x: hidden;
+}
+
+.overflow {
+    display: flex;
+    padding: .5rem 1rem;
+    overflow: hidden;
+}
+
+.logos_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    animation: logoLoop 30s linear infinite;
+}
+
+.reverse .logos_wrapper {
+    animation-direction: reverse;
+}
+.logo_item {
+    margin-left: 1rem;
+    padding: 1rem;
+    aspect-ratio: 30/9;
+    background: #ffffff;
+    display: grid;
+    place-items: center;
+    border-radius: 1rem;
+}
+
+.logo_item img {
+    height: 8rem;
+    width: 8rem;
+    margin-inline: 2rem;
+}
+
+@keyframes logoLoop {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
 }
 
 @keyframes professionRotate {
@@ -308,6 +437,9 @@ span {
 
 .about-img img {
     width: 40vw;
+    border-radius: 20px;
+    height: 500px;
+    width: 400px;
 }
 
 .heading {
@@ -380,6 +512,11 @@ span {
 .services-box p {
     font-size: 1.6rem;
     margin: 1rem 0 3rem;
+}
+
+
+.discuss p {
+    font-size: 2.5rem;
 }
 
 .portfolio {
